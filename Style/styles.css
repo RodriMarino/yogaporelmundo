@@ -3,9 +3,9 @@
   --main-color-secundary: #acd8aa;
   --main-text-color: #4a4a4a;
   --main-text-light: #fbfaff;
-  --main-color-tree: #CBAACB;;
+  --main-color-tree: #cbaacb;
   --main-text-: #f48498;
-  --mismo-color-del-logo-: #f8e5de
+  --mismo-color-del-logo-: #f8e5de;
 }
 
 /****Globales****/
@@ -24,7 +24,6 @@ h1 {
   font-family: "Lora", serif;
 }
 
-
 h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--main-color-tree);
@@ -32,11 +31,13 @@ h2 {
 
 a {
   text-decoration: none;
-  color: var(--main-text-light)
+  color: var(--main-text-light);
 }
 
 ul {
   list-style: none;
+  padding-left: 0px;
+  margin-top: 1rem;
 }
 
 /****LAYOUT****/
@@ -63,7 +64,7 @@ ul {
 
 #header nav ul li {
   margin: 0px 10px;
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /***Main***/
@@ -84,13 +85,13 @@ ul {
   margin-top: 70px;
   font-family: "Lora", serif;
   color: var(--main-color-tree);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #banner h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--main-color-tree);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #banner p {
@@ -101,7 +102,7 @@ ul {
   margin-bottom: 20px;
   text-align: center;
   color: var(--main-text-light);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .bannerUp {
@@ -119,12 +120,11 @@ ul {
 .subClases {
   text-align: center;
   margin-top: 20px;
-  
 }
 
 .subClases h2 {
   color: var(--main-text-color);
-  font-family:"Lora", serif;
+  font-family: "Lora", serif;
   font-size: 60px;
   margin-top: 50px;
 }
@@ -136,14 +136,12 @@ ul {
   margin: 30px 30px;
   align-items: center;
   flex-direction: column;
-  background-color:var(--main-color);
-
+  background-color: var(--main-color);
 }
 
 .clases1 {
   margin-top: 20px;
 }
-
 
 .clases-vivo {
   display: flex;
@@ -155,7 +153,6 @@ ul {
   background-color: var(--main-color);
 }
 
-
 .clases2 {
   margin-top: 20px;
 }
@@ -163,7 +160,6 @@ ul {
 #clases {
   display: flex;
   justify-content: space-around;
-  
 }
 
 img .imagen {
@@ -173,7 +169,7 @@ img .imagen {
 .comentarios {
   text-align: center;
   color: var(--main-text-color);
-  font-family:"Lora", serif;
+  font-family: "Lora", serif;
   margin-top: 60px;
 }
 
@@ -181,10 +177,9 @@ img .imagen {
   font-family: "Lora", serif;
   font-size: 60px;
   color: var(--main-text-color);
-  
 }
 
-.comentarios .articulos img{
+.comentarios .articulos img {
   border-radius: 10px;
 }
 
@@ -198,7 +193,6 @@ img .imagen {
   margin-top: 30px;
 }
 
-
 .articulos {
   display: flex;
   justify-content: space-evenly;
@@ -206,7 +200,6 @@ img .imagen {
   margin-bottom: 50px;
   flex-wrap: wrap; /*Bajan cuando no tienen mas espacio, pero no tiene sentido con unidades relativas*/
 }
-
 
 /***footer***/
 
@@ -217,7 +210,6 @@ footer {
   text-align: left;
   color: var(--main-text-light);
 }
-
 
 footer {
   text-align: left;
@@ -232,22 +224,12 @@ footer ul li {
   margin-top: 15px;
 }
 
-
-
-
-
-
-
-
-
 /****Pagina Clases****/
 
 .header-clases {
   display: flex;
-  justify-content: space-between
-
+  justify-content: space-between;
 }
-
 
 .main-clases {
   height: 125vh;
@@ -258,7 +240,7 @@ footer ul li {
   font-size: 60px;
   text-align: center;
   color: var(--main-color-tree);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
   font-family: "Lora", serif;
 }
 
@@ -268,7 +250,7 @@ footer ul li {
 }
 
 .videos-clases {
-  height: 400px
+  height: 400px;
 }
 
 .videos-clases .up {
@@ -281,12 +263,11 @@ footer ul li {
   display: flex;
   margin-top: 75px;
   justify-content: space-evenly;
-} 
+}
 
 .clase-clase {
   border-radius: 300px;
 }
-
 
 /****Pagina Talleres****/
 /*Main*/
@@ -301,15 +282,14 @@ footer ul li {
   font-family: "Lora", serif;
   margin-bottom: 100px;
   color: var(--main-color-tree);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
   font-size: 60px;
 }
 
-#talleres div ul{
+#talleres div ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
-
 }
 
 #talleres div ul li {
@@ -317,18 +297,15 @@ footer ul li {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 #talleres div ul li a {
   list-style: none;
-  color:#000000;
+  color: #000000;
   font-family: "Lora", serif;
   font-size: larger;
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
-
-
 
 /****Pagina Contacta con nosotros****/
 
@@ -351,34 +328,25 @@ footer ul li {
 #main-nosotros h1 {
   font-family: "lora", serif;
   color: var(--main-color-tree);
-  text-shadow:2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
   font-size: 60px;
 }
 
 #main-nosotros input {
-  background-color: var(--main-color)
+  background-color: var(--main-color);
 }
 
 #main-nosotros textarea {
   background-color: var(--main-color);
-
 }
-
-
-
-
-
-
-
 
 /*Componentes*/
 .boton {
   background-color: #d87c5f;
-  color: var();
+  color: #000000;
   border-radius: 8px;
   height: 30px;
   padding: 5px 10px;
-
 }
 
 .clases-boton {
@@ -387,7 +355,6 @@ footer ul li {
   margin-top: 5px;
   border-radius: 8px;
   padding: 5px;
-
 }
 
 .logo {
@@ -401,13 +368,11 @@ footer ul li {
   right: 10px;
   list-style: none;
   border-radius: 300px;
-  
 }
 
-.boton:hover{
-  background-color:#000000;
+.boton:hover {
+  background-color: #f5f1f1;
 }
-
 
 #boton-enviar {
   background-color: var(--main-text-color);
@@ -416,43 +381,39 @@ footer ul li {
   border-radius: 8px;
 }
 
-.contacta-con-nosotros img:hover{
+.contacta-con-nosotros img:hover {
   width: 60px;
 }
 
-
-
-
-
-
 /*Responsive*/
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
+
   #banner {
     background-color: var(--main-color);
     background-image: none;
     height: auto;
   }
 
-  #banner .bannerdown {
+  #banner .bannerDown {
     flex-direction: column;
     justify-content: center;
     max-width: 300px;
+  }
 
+  #banner .bannerDown p {
+    display: none;
   }
 
   #banner h2 {
     margin-bottom: 50px;
   }
 
-  #header {
-    height: 200px;
-  }
 
   #header {
+    height: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    
+    flex-direction:row;
+    justify-content: space-between;
   }
 
   #header ul {
@@ -469,11 +430,9 @@ footer ul li {
   main {
     margin-top: 150px;
   }
+
+  .bannerDown .boton {
+    text-align: center;
+    white-space: nowrap;
+  }
 }
-
-
-
-  
-  
-
-
