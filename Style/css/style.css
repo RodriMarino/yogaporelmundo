@@ -61,7 +61,7 @@ footer ul li {
   #banner {
     background-color: #f5ede0;
     background-image: none !important;
-    height: auto;
+    height: 50vh !important;
     justify-content: flex-start !important;
   }
   #banner h1 {
