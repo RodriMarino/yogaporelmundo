@@ -1,0 +1,25 @@
+@import "../base/vars";
+
+.main-meditacion {
+    height: 100vh;
+
+    h1 {
+        margin-top: 70px;
+        text-align: center;
+        font-family: "Lora", serif;
+        margin-bottom: 100px;
+        color: $main-color-tree;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 60px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+.footer-meditacion {
+    margin-bottom: 0;
+}

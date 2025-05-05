@@ -1,0 +1,30 @@
+//Base
+@use "./base/reset";
+@use "./base/typography";
+@use "./base/vars";
+
+//LAYOUT
+@use "./layout/header";
+@use "./layout/navbar";
+@use "./layout/footer";
+
+//MEDIA-QUERIES
+@use "./media-queries/medias-queries.scss";
+
+
+//COMPONETS
+@use "./componets/title";
+@use "./componets/button";
+
+//PAGES
+
+@use "./pages/home";
+@use "./pages/clases";
+@use "./pages/contacta-con-nosotros";
+@use "./pages/ebooks";
+@use "./pages/meditacion";
+@use "./pages/talleres";
+@use "./pages/sobre-el-yoga";
+
+
+

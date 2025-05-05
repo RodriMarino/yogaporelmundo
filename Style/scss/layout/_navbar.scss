@@ -1,0 +1,11 @@
+@import "../base/vars";
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.1019607843) !important;
+
+    a {
+        color: #f5f1f1;
+    }
+}

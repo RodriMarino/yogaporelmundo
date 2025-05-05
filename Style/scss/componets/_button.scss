@@ -1,0 +1,41 @@
+@import "../base/vars";
+
+.boton {
+    background-color: #d87c5f;
+    color: #000000;
+    border-radius: 8px;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.clases-boton {
+    background-color: $main-text-color;
+    color: $main-color;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#boton-enviar {
+    background-color: $main-text-color;
+    color: $main-color;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #f5f1f1;
+}
+
+.contacta-con-nosotros img {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    list-style: none;
+    border-radius: 300px;
+}
+
+.contacta-con-nosotros img:hover {
+    width: 60px;
+}

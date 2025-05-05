@@ -1,0 +1,38 @@
+@import "../base/vars";
+
+#talleres {
+    height: 80vh;
+    margin-top: 70px;
+
+    h1 {
+        text-align: center;
+        font-family: "Lora", serif;
+        margin-bottom: 100px;
+        color: $main-color-tree;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 60px;
+    }
+
+    div {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 100px;
+
+            li {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                a {
+                    list-style: none;
+                    color: #000000;
+                    font-family: "Lora", serif;
+                    font-size: larger;
+                    text-shadow: 2px 2px 4px #000000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "../base/_vars.scss";
+
+footer {
+    background-color: $main-text-color;
+    bottom: 0px;
+    height: 220px;
+    text-align: left;
+    color: $main-text-light;
+    text-align: left;
+    padding: 15px;
+
+    ul {
+        margin-top: 15;
+
+        li {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import "../base/vars";
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: static !important;
+    }
+
+    .navbar-nav a {
+        color: #141313;
+    }
+
+    #banner {
+        background-color: $main-color;
+        background-image: none !important;
+        height: auto;
+        justify-content: flex-start !important;
+
+        h1 {
+            margin-top: 0px;
+        }
+
+        .bannerDown {
+            flex-direction: column;
+            justify-content: center;
+            max-width: 300px;
+
+            p {
+                display: none;
+            }
+
+            .boton {
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+
+    
+    }
+
+    main {
+        margin-top: 150px;
+    }
+
+
+    .main-clases {
+        margin-top: 200px;
+        height: 150vh;
+    }
+
+    #talleres {
+        margin-top: 200px;
+    }
+
+    #main-nosotros {
+        margin-top: 200px;
+        height: 130vh;
+    }
+
+    .main-meditacion {
+        margin-top: 200px;
+    }
+
+    .main-ebooks {
+        margin-top: 200px;
+    }
+
+    .main-sobre-el-yoga {
+        margin-top: 200px;
+    }
+}

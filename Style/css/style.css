@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 1rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Lora", serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.1019607843) !important;
+}
+.navbar a {
+  color: #f5f1f1;
+}
+
+footer {
+  background-color: #4a4a4a;
+  bottom: 0px;
+  height: 220px;
+  text-align: left;
+  color: #fbfaff;
+  text-align: left;
+  padding: 15px;
+}
+footer ul {
+  margin-top: 15;
+}
+footer ul li {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: static !important;
+  }
+  .navbar-nav a {
+    color: #141313;
+  }
+  #banner {
+    background-color: #f5ede0;
+    background-image: none !important;
+    height: auto;
+    justify-content: flex-start !important;
+  }
+  #banner h1 {
+    margin-top: 0px;
+  }
+  #banner .bannerDown {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+  }
+  #banner .bannerDown p {
+    display: none;
+  }
+  #banner .bannerDown .boton {
+    text-align: center;
+    white-space: nowrap;
+  }
+  main {
+    margin-top: 150px;
+  }
+  .main-clases {
+    margin-top: 200px;
+    height: 150vh;
+  }
+  #talleres {
+    margin-top: 200px;
+  }
+  #main-nosotros {
+    margin-top: 200px;
+    height: 130vh;
+  }
+  .main-meditacion {
+    margin-top: 200px;
+  }
+  .main-ebooks {
+    margin-top: 200px;
+  }
+  .main-sobre-el-yoga {
+    margin-top: 200px;
+  }
+}
+h1 {
+  font-family: "Lora", serif;
+}
+
+h2 {
+  color: #cbaacb;
+}
+
+.boton {
+  background-color: #d87c5f;
+  color: #000000;
+  border-radius: 8px;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.clases-boton {
+  background-color: #4a4a4a;
+  color: #f5ede0;
+  margin-top: 5px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#boton-enviar {
+  background-color: #4a4a4a;
+  color: #f5ede0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.boton:hover {
+  background-color: #f5f1f1;
+}
+
+.contacta-con-nosotros img {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  list-style: none;
+  border-radius: 300px;
+}
+
+.contacta-con-nosotros img:hover {
+  width: 60px;
+}
+
+body {
+  background-color: #f5ede0;
+}
+
+a {
+  color: #fbfaff;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  background-image: url(../../../img/FOTO\ WANDA3.JPG);
+  background-position: center;
+  background-size: cover;
+}
+#banner h1 {
+  font-size: 60px;
+  margin-top: 70px;
+  font-family: "Lora", serif;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+}
+#banner h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+}
+#banner p {
+  width: 600px;
+  max-width: 1500px;
+  min-width: 500px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fbfaff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.bannerUp {
+  text-align: center;
+}
+
+.bannerDown {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subClases {
+  text-align: center;
+  margin-top: 20px;
+}
+.subClases h2 {
+  color: #4a4a4a;
+  font-family: "Lora", serif;
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.clases-grabadas {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin: 30px 30px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5ede0;
+}
+
+.clases1 {
+  margin-top: 20px;
+}
+
+.clases-vivo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin: 30px 30px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5ede0;
+}
+
+.clases2 {
+  margin-top: 20px;
+}
+
+#clases {
+  display: flex;
+  justify-content: space-around;
+}
+
+img .imagen {
+  width: 40%;
+}
+
+.comentarios {
+  text-align: center;
+  color: #4a4a4a;
+  font-family: "Lora", serif;
+  margin-top: 60px;
+}
+.comentarios h2 {
+  font-family: "Lora", serif;
+  font-size: 60px;
+  color: #4a4a4a;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.articulos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  /*Bajan cuando no tienen mas espacio, pero no tiene sentido con unidades relativas*/
+}
+.articulos img {
+  border-radius: 10px;
+}
+
+.main-clases {
+  height: 125vh;
+  margin-top: 70px;
+}
+.main-clases h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Lora", serif;
+}
+
+.empieza-tu-viaje {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.videos-clases {
+  height: 400px;
+}
+.videos-clases .up {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-evenly;
+}
+.videos-clases .down {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-evenly;
+}
+
+.clase-clase {
+  border-radius: 300px;
+}
+
+#main-nosotros {
+  height: 70vh;
+  text-align: center;
+  margin-top: 70px;
+}
+#main-nosotros .datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  color: #4a4a4a;
+  font-family: "lora", serif;
+  font-size: larger;
+}
+#main-nosotros h1 {
+  font-family: "lora", serif;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+}
+#main-nosotros input {
+  background-color: #f5ede0;
+}
+#main-nosotros textarea {
+  background-color: #f5ede0;
+}
+
+.main-ebooks {
+  height: 100vh;
+}
+.main-ebooks h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 100px;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+}
+.main-ebooks p {
+  text-align: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.footer-ebooks {
+  margin-bottom: 0;
+}
+
+.main-meditacion {
+  height: 100vh;
+}
+.main-meditacion h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 100px;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+}
+.main-meditacion div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer-meditacion {
+  margin-bottom: 0;
+}
+
+#talleres {
+  height: 80vh;
+  margin-top: 70px;
+}
+#talleres h1 {
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 100px;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+}
+#talleres div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+#talleres div ul li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#talleres div ul li a {
+  list-style: none;
+  color: #000000;
+  font-family: "Lora", serif;
+  font-size: larger;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.main-sobre-el-yoga {
+  height: 100vh;
+}
+.main-sobre-el-yoga h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 100px;
+  color: #cbaacb;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+}
+.main-sobre-el-yoga p {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.logo {
+  border-radius: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */
