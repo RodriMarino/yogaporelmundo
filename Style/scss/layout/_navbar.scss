@@ -1,11 +1,13 @@
 @import "../base/vars";
 
 .navbar {
+    top: 0px;
     position: fixed;
     width: 100%;
-    background-color: rgba(18, 18, 18, 0.1019607843) !important;
-
+    background-color: rgba(18, 18, 18, 0.283) !important;
+    
     a {
-        color: #f5f1f1;
+        color: $main-text-color;
+        font-family: "Montserrat", sans-serif;;
     }
 }

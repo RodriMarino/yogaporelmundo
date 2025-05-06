@@ -2,6 +2,12 @@
 
 .main-sobre-el-yoga {
     height: 100vh;
+    @media screen and (max-width: 600px) {
+        height: 110vh;
+        margin-top: 0;
+        
+        
+    }
 
     h1 {
         margin-top: 70px;
@@ -11,6 +17,10 @@
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
         font-size: 60px;
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+
+        }
     }
 
     p {

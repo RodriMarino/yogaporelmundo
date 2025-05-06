@@ -1,8 +1,29 @@
 @import "../base/vars";
 
 .main-clases {
-    height: 125vh;
-    margin-top: 70px;
+    height: 150vh;
+    @media screen and (max-width: 410px){
+        margin-top: 10px;
+        height: 250vh;
+    }
+    
+    .up {
+        @media screen and (max-width: 410px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+    }
+
+    .down {
+        @media screen and (max-width: 410px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+    
 
     h1 {
         font-size: 60px;
@@ -10,6 +31,15 @@
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
         font-family: "Lora", serif;
+        margin-top: 70px;
+
+        @media screen and (max-width: 410px) {
+            margin-top: 0;
+            
+        }
+
+        
+        
     }
 }
 
@@ -19,11 +49,12 @@
 }
 
 .videos-clases {
-    height: 400px;
+    height: 100vh;
     .up {
         display: flex;
         margin-top: 75px;
         justify-content: space-evenly;
+
     }
     .down {
         display: flex;

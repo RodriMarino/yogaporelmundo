@@ -1,9 +1,13 @@
+%titulo {
+    font-family: "Lora", serif;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-family: "Lora", serif;
+    @extend %titulo;
 }
 
 h2 {

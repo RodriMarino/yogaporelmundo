@@ -1,7 +1,10 @@
 @import "../base/vars";
 
-h1 {
+%titulo {
     font-family: "Lora", serif;
+}
+h1 {
+    @extend %titulo;
 }
 
 h2 {
