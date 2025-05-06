@@ -24,7 +24,9 @@
 }
 
 .boton:hover {
-    background-color: #f5f1f1;
+    background-color: $main-text-color;
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .contacta-con-nosotros img {
@@ -38,4 +40,5 @@
 
 .contacta-con-nosotros img:hover {
     width: 60px;
+    transition: 0.5s;
 }

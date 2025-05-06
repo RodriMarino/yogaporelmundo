@@ -1,7 +1,12 @@
 @import "../base/vars";
+@import "../componets/logo";
+@import "../componets/button";
 
 .main-ebooks {
     height: 100vh;
+    @media screen and (max-width: 600px) {
+        margin-top: 0px;
+    }
 
     h1 {
         margin-top: 70px;
@@ -11,12 +16,20 @@
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
         font-size: 60px;
+        @media screen and (max-width:600px) {
+            margin: 0 0;
+            
+        }
     }
 
     p {
         text-align: center;
         align-items: center;
         margin: 0 50px;
+        @media screen and (max-width:600px) {
+            margin: 0 0;
+            
+        }
     }
 }
 

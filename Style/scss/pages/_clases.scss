@@ -1,4 +1,6 @@
 @import "../base/vars";
+@import "../componets/logo";
+@import "../componets/button";
 
 .main-clases {
     height: 150vh;
@@ -46,6 +48,8 @@
 .empieza-tu-viaje {
     text-align: center;
     margin-top: 50px;
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .videos-clases {

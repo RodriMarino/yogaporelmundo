@@ -1,9 +1,15 @@
 @import "../base/vars";
+@import "../componets/logo";
+@import "../componets/button";
 
 #main-nosotros {
-    height: 70vh;
+    height: 150vh;
     text-align: center;
     margin-top: 70px;
+    @media screen and (max-width: 600px) {
+        height: 150vh;
+        
+    }
 
     .datos {
         display: flex;
