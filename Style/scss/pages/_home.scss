@@ -1,6 +1,7 @@
 @import "../base/vars";
 @import "../componets/logo";
 @import "../componets/button";
+@import "../componets/keyframes";
 
 body {
     background-color: $main-color;
@@ -19,6 +20,12 @@ a {
     background-image: url(../../../img/foto-3.JPG);
     background-position: center;
     background-size: cover;
+    
+//animation title
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
 
     h1 {
         font-size: 60px;
@@ -26,7 +33,16 @@ a {
         font-family: "Lora", serif;
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
+
+        @media screen and (max-width:600px) {
+            margin-top: 0;
+            
+        }
+        
+
+        }
     }
+
 
     h2 {
         font-family: "Montserrat", sans-serif;
@@ -43,9 +59,14 @@ a {
         text-align: center;
         color: $main-text-light;
         text-shadow: 2px 2px 4px #000000;
+        @media screen and (max-width:510px) {
+            display: none;
+            
+            
+        }
     }
     
-}
+
 
 .bannerUp {
     text-align: center;
