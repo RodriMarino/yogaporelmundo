@@ -4,12 +4,23 @@
 
 .main-sobre-el-yoga {
     height: 100vh;
+
+    div {
+        display: flex;
+        justify-content: center;
+            p {
+        @media screen and (max-width:520px) {
+            font-size: xx-small;
+            min-width: auto;
+            margin: 50px 0px;
+            
+        }
+        }
+        
+    }
     @media screen and (max-width: 600px) {
         height: 100vh;
         margin-top: 0;
-
-        
-        
     }
 
     h1 {
@@ -23,18 +34,13 @@
         @media screen and (max-width: 600px) {
             margin-top: 0;
             margin-bottom: 5px;
-            
 
+    
+    }
         }
+        
     }
 
-    p {
-        text-align: center;
-        margin: 0 50px;
-        @media screen and (max-width: 500px) {
-            margin: 0px 0px;
-            
-        }
-    }
-}
+    
+
 

@@ -56,9 +56,19 @@ footer {
 footer span {
   margin-left: 15px;
 }
+@media screen and (max-width: 510px) {
+  footer span {
+    margin: 0;
+  }
+}
 footer ul {
   margin-top: 15;
   margin-bottom: 0;
+}
+@media screen and (max-width: 510px) {
+  footer ul {
+    margin: 0px;
+  }
 }
 footer ul div {
   display: flex;
@@ -71,6 +81,11 @@ footer ul li {
   display: flex;
   align-items: center;
   margin: 15px;
+}
+@media screen and (max-width: 510px) {
+  footer ul li {
+    justify-content: space-evenly;
+  }
 }
 footer ul li iframe {
   margin: 0px;
@@ -151,6 +166,11 @@ h2 {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -197,6 +217,11 @@ h2 {
   border-radius: 8px;
   height: 30px;
   padding: 5px 10px;
+}
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
 }
 
 .clases-boton {
@@ -266,6 +291,11 @@ h2 {
 body {
   background-color: #f5ede0;
 }
+@media screen and (max-width: 510px) {
+  body main .descripcion {
+    display: none;
+  }
+}
 
 a {
   color: #fbfaff !important;
@@ -313,11 +343,6 @@ p {
   text-align: center;
   color: #fbfaff;
   text-shadow: 2px 2px 4px #000000;
-}
-@media screen and (max-width: 510px) {
-  p {
-    display: none;
-  }
 }
 
 .bannerUp {
@@ -425,6 +450,11 @@ img .imagen {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -464,7 +494,7 @@ img .imagen {
 .main-clases {
   height: 150vh;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 600px) {
   .main-clases {
     margin-top: 10px;
     height: 250vh;
@@ -492,7 +522,7 @@ img .imagen {
   font-family: "Lora", serif;
   margin-top: 70px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 600px) {
   .main-clases h1 {
     margin-top: 0;
   }
@@ -533,6 +563,11 @@ img .imagen {
   border-radius: 8px;
   height: 30px;
   padding: 5px 10px;
+}
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
 }
 
 .clases-boton {
@@ -613,6 +648,11 @@ img .imagen {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -679,12 +719,12 @@ img .imagen {
   }
 }
 .main-ebooks {
-  height: 120vh;
+  height: 120%;
 }
 @media screen and (max-width: 600px) {
   .main-ebooks {
     margin-top: 0px;
-    height: 100vh;
+    height: 100%;
   }
 }
 .main-ebooks div section {
@@ -772,6 +812,11 @@ img .imagen {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -858,6 +903,11 @@ img .imagen {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -941,6 +991,11 @@ img .imagen {
   height: 30px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 400px) {
+  .boton {
+    display: none;
+  }
+}
 
 .clases-boton {
   background-color: #4a4a4a;
@@ -980,6 +1035,17 @@ img .imagen {
 .main-sobre-el-yoga {
   height: 100vh;
 }
+.main-sobre-el-yoga div {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 520px) {
+  .main-sobre-el-yoga div p {
+    font-size: xx-small;
+    min-width: auto;
+    margin: 50px 0px;
+  }
+}
 @media screen and (max-width: 600px) {
   .main-sobre-el-yoga {
     height: 100vh;
@@ -999,15 +1065,6 @@ img .imagen {
   .main-sobre-el-yoga h1 {
     margin-top: 0;
     margin-bottom: 5px;
-  }
-}
-.main-sobre-el-yoga p {
-  text-align: center;
-  margin: 0 50px;
-}
-@media screen and (max-width: 500px) {
-  .main-sobre-el-yoga p {
-    margin: 0px 0px;
   }
 }
 

@@ -4,7 +4,7 @@
 
 .main-clases {
     height: 150vh;
-    @media screen and (max-width: 410px){
+    @media screen and (max-width: 600px){
         margin-top: 10px;
         height: 250vh;
     }
@@ -35,7 +35,7 @@
         font-family: "Lora", serif;
         margin-top: 70px;
 
-        @media screen and (max-width: 410px) {
+        @media screen and (max-width: 600px) {
             margin-top: 0;
             
         }

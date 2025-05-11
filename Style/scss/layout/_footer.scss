@@ -18,6 +18,10 @@ footer {
     
     span {
         margin-left: 15px;
+        @media screen and (max-width:510px) {
+            margin: 0;
+            
+        }
         
     }
 
@@ -26,11 +30,16 @@ footer {
     ul {
         margin-top: 15;
         margin-bottom: 0;
+        @media screen and (max-width:510px) {
+            margin: 0px;
+            
+        }
     div {
         display: flex;
         justify-content: center;
         i {
             margin: 5px 10px;
+            
             
         }}
 
@@ -38,6 +47,10 @@ footer {
             display: flex;
             align-items: center;
             margin: 15px;
+
+            @media screen and (max-width:510px) {
+                justify-content:space-evenly;
+            }
 
             iframe {
                 margin: 0px;

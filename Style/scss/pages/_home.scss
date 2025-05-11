@@ -5,6 +5,13 @@
 
 body {
     background-color: $main-color;
+    main .descripcion {
+        @media screen and (max-width:510px) {
+            display: none;
+            
+            
+        }
+    }
 }
 
 a {
@@ -20,6 +27,7 @@ a {
     background-image: url(../../../img/foto-3.JPG);
     background-position: center;
     background-size: cover;
+    
     
 //animation title
     .tracking-in-expand {
@@ -59,11 +67,7 @@ a {
         text-align: center;
         color: $main-text-light;
         text-shadow: 2px 2px 4px #000000;
-        @media screen and (max-width:510px) {
-            display: none;
-            
-            
-        }
+        
     }
     
 
