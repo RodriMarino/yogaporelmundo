@@ -3,45 +3,38 @@
 @import "../componets/button";
 
 .main-clases {
-    height: 150vh;
+    min-height: 100vh;
     @media screen and (max-width: 600px){
         margin-top: 10px;
-        height: 250vh;
+        min-height: unset;
     }
     
-    .up {
-        @media screen and (max-width: 410px) {
+    .up, .down {
         display: flex;
+        margin-top: 75px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 700px) {
         flex-direction: column;
         align-items: center;
-        
+        margin-top: 30px;
+        gap: 20px;
         }
     }
 
-    .down {
-        @media screen and (max-width: 410px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    }
-    
-
-    h1 {
+h1 {
         font-size: 60px;
+        margin-top: 70px;
         text-align: center;
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
         font-family: "Lora", serif;
-        margin-top: 70px;
 
         @media screen and (max-width: 600px) {
-            margin-top: 0;
-            
+            font-size: 36px;
+            margin-top: 20px;
         }
-
-        
-        
     }
 }
 
@@ -51,23 +44,6 @@
     transition: 0.5s;
     transform: scale(1.2);
 }
-
-.videos-clases {
-    height: 100vh;
-    .up {
-        display: flex;
-        margin-top: 75px;
-        justify-content: space-evenly;
-
-    }
-    .down {
-        display: flex;
-        margin-top: 75px;
-        justify-content: space-evenly;
-    }
-}
-
-
 .clase-clase {
     border-radius: 300px;
 }

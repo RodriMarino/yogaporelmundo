@@ -4,168 +4,236 @@
 @import "../componets/keyframes";
 
 body {
-    background-color: $main-color;
-    main .descripcion {
-        @media screen and (max-width:510px) {
-            display: none;
-            
-            
-        }
-    }
+  background-color: $main-color;
 }
 
 a {
-    color: $main-text-light !important;
+  color: $main-text-light !important;
 }
 
 #banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: space-between;
-    background-image: url('/img/banner-index.JPG');;
-    background-position: center;
-    background-size: cover;
-    
-    
-//animation title
-    .tracking-in-expand {
-        -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-image: url("/img/banner-index.JPG");
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 600px) {
+    min-height: unset;
+  }
+
+  //animation title
+  .tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1.2s
+      cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-top: 70px;
+    font-family: "Lora", serif;
+    color: $main-color-tree;
+    text-shadow: 2px 2px 4px #000000;
+
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+      margin-top: 0;
     }
+  }
+}
 
-    h1 {
-        font-size: 60px;
-        margin-top: 70px;
-        font-family: "Lora", serif;
-        color: $main-color-tree;
-        text-shadow: 2px 2px 4px #000000;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: $main-color-tree;
+  text-shadow: 2px 2px 4px #000000;
+}
 
-        @media screen and (max-width:600px) {
-            margin-top: 0;
-            
-        }
-        
+p {
+  width: 100%;
+  max-width: 600px;
+  min-width: unset;
+  margin-bottom:0 20px auto;
+  text-align: center;
+  color: $main-text-light;
+  text-shadow: 2px 2px 4px #000000;
 
-        }
-    }
-
-
-    h2 {
-        font-family: "Montserrat", sans-serif;
-        color: $main-color-tree;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-    p {
-        width: 600px;
-        max-width: 1500px;
-        min-width: 500px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        text-align: center;
-        color: $main-text-light;
-        text-shadow: 2px 2px 4px #000000;
-        
-    }
-    
-
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    max-width: 90vw;
+    padding: 0 10px;
+  }
+}
 
 .bannerUp {
-    text-align: center;
+  text-align: center;
 }
 
 .bannerDown {
-    display: flex;
-    margin-bottom: 50px;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .subClases {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
+  @media screen and (max-width: 600px) {
+    margin-top: 5px; 
+  }
 
-    h2 {
-        color: $main-text-color;
-        font-family: "Lora", serif;
-        font-size: 60px;
-        margin-top: 50px;
+  h2 {
+    color: $main-text-color;
+    font-family: "Lora", serif;
+    font-size: 60px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+      margin-top: 10px;
     }
+  }
 }
 
 .clases-grabadas {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin: 30px 30px;
-    align-items: center;
-    flex-direction: column;
-    background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $main-color;
+
+  i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: $main-text-color;
+    transition: color 0.2s;
+
+    .clases-boton {
+      font-size: 1.2rem;
+      padding: 10px 24px;
+      border-radius: 8px;
+    }
+  }
 }
 
 .clases1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .clases-vivo {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin: 30px 30px;
-    align-items: center;
-    flex-direction: column;
-    background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $main-color;
+
+  i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: $main-text-color;
+    transition: color 0.2s;
+
+    .clases-boton {
+      font-size: 1.2rem;
+      padding: 10px 24px;
+      border-radius: 8px;
+    }
+  }
 }
 
 .clases2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #clases {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-img .imagen {
-    width: 40%;
+img.imagen {
+  width: 40%;
 }
 
 .comentarios {
-    text-align: center;
-    color: $main-text-color;
+  text-align: center;
+  color: $main-text-color;
+  font-family: "Lora", serif;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+
+  h2 {
     font-family: "Lora", serif;
-    margin-top: 60px;
-
-    h2 {
-        font-family: "Lora", serif;
-        font-size: 60px;
-        color: $main-text-color;
+    font-size: 60px;
+    color: $main-text-color;
+    margin-bottom: 30px;
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
     }
-
+  }
 }
 
 .descripcion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .articulos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  article {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    /*Bajan cuando no tienen mas espacio, pero no tiene sentido con unidades relativas*/
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    max-width: 260px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
 
     img {
-        border-radius: 10px;
+      width: 100%;
+      max-width: 220px;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    article {
+      max-width: 90vw;
+    }
+  }
 }

@@ -62,7 +62,7 @@ footer span {
   }
 }
 footer ul {
-  margin-top: 15;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 510px) {
@@ -291,25 +291,26 @@ h2 {
 body {
   background-color: #f5ede0;
 }
-@media screen and (max-width: 510px) {
-  body main .descripcion {
-    display: none;
-  }
-}
 
 a {
   color: #fbfaff !important;
 }
 
 #banner {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   background-image: url("/img/banner-index.JPG");
   background-position: center;
   background-size: cover;
+}
+@media screen and (max-width: 600px) {
+  #banner {
+    min-height: unset;
+  }
 }
 #banner .tracking-in-expand {
   -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -324,6 +325,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   #banner h1 {
+    font-size: 36px;
     margin-top: 0;
   }
 }
@@ -335,14 +337,20 @@ h2 {
 }
 
 p {
-  width: 600px;
-  max-width: 1500px;
-  min-width: 500px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  min-width: unset;
+  margin-bottom: 0 20px auto;
   text-align: center;
   color: #fbfaff;
   text-shadow: 2px 2px 4px #000000;
+}
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+    max-width: 90vw;
+    padding: 0 10px;
+  }
 }
 
 .bannerUp {
@@ -361,21 +369,41 @@ p {
   text-align: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 600px) {
+  .subClases {
+    margin-top: 5px;
+  }
+}
 .subClases h2 {
   color: #4a4a4a;
   font-family: "Lora", serif;
   font-size: 60px;
   margin-top: 50px;
 }
+@media screen and (max-width: 600px) {
+  .subClases h2 {
+    font-size: 36px;
+    margin-top: 10px;
+  }
+}
 
 .clases-grabadas {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin: 30px 30px;
   align-items: center;
   flex-direction: column;
   background-color: #f5ede0;
+}
+.clases-grabadas i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  transition: color 0.2s;
+}
+.clases-grabadas i .clases-boton {
+  font-size: 1.2rem;
+  padding: 10px 24px;
+  border-radius: 8px;
 }
 
 .clases1 {
@@ -385,11 +413,20 @@ p {
 .clases-vivo {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin: 30px 30px;
   align-items: center;
   flex-direction: column;
   background-color: #f5ede0;
+}
+.clases-vivo i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  transition: color 0.2s;
+}
+.clases-vivo i .clases-boton {
+  font-size: 1.2rem;
+  padding: 10px 24px;
+  border-radius: 8px;
 }
 
 .clases2 {
@@ -399,9 +436,17 @@ p {
 #clases {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 700px) {
+  #clases {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-img .imagen {
+img.imagen {
   width: 40%;
 }
 
@@ -410,11 +455,21 @@ img .imagen {
   color: #4a4a4a;
   font-family: "Lora", serif;
   margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
 }
 .comentarios h2 {
   font-family: "Lora", serif;
   font-size: 60px;
   color: #4a4a4a;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .comentarios h2 {
+    font-size: 36px;
+  }
 }
 
 .descripcion {
@@ -429,14 +484,42 @@ img .imagen {
 
 .articulos {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
-  /*Bajan cuando no tienen mas espacio, pero no tiene sentido con unidades relativas*/
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.articulos img {
-  border-radius: 10px;
+.articulos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  max-width: 260px;
+  transition: transform 0.2s;
+}
+.articulos article:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.articulos article img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 700px) {
+  .articulos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .articulos article {
+    max-width: 90vw;
+  }
 }
 
 .logo {
@@ -492,39 +575,40 @@ img .imagen {
 }
 
 .main-clases {
-  height: 150vh;
+  min-height: 100vh;
 }
 @media screen and (max-width: 600px) {
   .main-clases {
     margin-top: 10px;
-    height: 250vh;
+    min-height: unset;
   }
 }
-@media screen and (max-width: 410px) {
-  .main-clases .up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.main-clases .up, .main-clases .down {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 410px) {
-  .main-clases .down {
-    display: flex;
+@media screen and (max-width: 700px) {
+  .main-clases .up, .main-clases .down {
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    gap: 20px;
   }
 }
 .main-clases h1 {
   font-size: 60px;
+  margin-top: 70px;
   text-align: center;
   color: #cbaacb;
   text-shadow: 2px 2px 4px #000000;
   font-family: "Lora", serif;
-  margin-top: 70px;
 }
 @media screen and (max-width: 600px) {
   .main-clases h1 {
-    margin-top: 0;
+    font-size: 36px;
+    margin-top: 20px;
   }
 }
 
@@ -533,20 +617,6 @@ img .imagen {
   margin-top: 50px;
   transition: 0.5s;
   transform: scale(1.2);
-}
-
-.videos-clases {
-  height: 100vh;
-}
-.videos-clases .up {
-  display: flex;
-  margin-top: 75px;
-  justify-content: space-evenly;
-}
-.videos-clases .down {
-  display: flex;
-  margin-top: 75px;
-  justify-content: space-evenly;
 }
 
 .clase-clase {
@@ -854,15 +924,55 @@ img .imagen {
 }
 
 .main-meditacion {
-  height: 150vh;
+  min-height: 100vh;
+  margin-top: 0;
 }
 @media screen and (max-width: 410px) {
   .main-meditacion {
     margin-top: 0px;
-    height: 100vh;
+    min-height: 100vh;
   }
 }
-.main-meditacion h1 {
+
+.meditaciones-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.meditaciones-container iframe {
+  width: 350px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .meditaciones-container {
+    gap: 20px;
+  }
+  .meditaciones-container iframe {
+    width: 300px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .meditaciones-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .meditaciones-container iframe {
+    width: 90vw;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+}
+
+h1 {
   margin-top: 70px;
   text-align: center;
   font-family: "Lora", serif;
@@ -871,16 +981,17 @@ img .imagen {
   text-shadow: 2px 2px 4px #000000;
   font-size: 60px;
 }
-@media screen and (max-width: 410px) {
-  .main-meditacion h1 {
+@media screen and (max-width: 600px) {
+  h1 {
     margin-top: 0px;
     font-size: 40px;
   }
 }
-.main-meditacion div {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+@media screen and (max-width: 410px) {
+  h1 {
+    margin-top: 0px;
+    font-size: 40px;
+  }
 }
 
 .footer-meditacion {
