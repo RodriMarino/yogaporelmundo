@@ -3,47 +3,69 @@
 @import "../componets/button";
 
 .main-clases {
-    min-height: 100vh;
-    @media screen and (max-width: 600px){
-        margin-top: 10px;
-        min-height: unset;
-    }
-    
-    .up, .down {
-        display: flex;
-        margin-top: 75px;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+  padding-bottom: 40px;
+  min-height: 100vh;
 
-        @media screen and (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        gap: 20px;
-        }
-    }
+  @media screen and (max-width: 600px) {
+    margin-top: 0px;
+  }
 
-h1 {
-        font-size: 60px;
-        margin-top: 70px;
-        text-align: center;
-        color: $main-color-tree;
-        text-shadow: 2px 2px 4px #000000;
-        font-family: "Lora", serif;
+  .up > *,
+  .down > * {
+    max-width: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
 
-        @media screen and (max-width: 600px) {
-            font-size: 36px;
-            margin-top: 20px;
-        }
+    @media screen and (max-width: 600px) {
+      max-width: 100px;
+      width: 100%;
+      margin: 5px;
+      
     }
+  }
+
+  .up,
+  .down {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      gap: 10px;
+    }
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-top: 70px;
+    text-align: center;
+    color: $main-color-tree;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Lora", serif;
+
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .empieza-tu-viaje {
-    text-align: center;
-    margin-top: 50px;
-    transition: 0.5s;
-    transform: scale(1.2);
+  text-align: center;
+  margin-top: 50px;
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 .clase-clase {
-    border-radius: 300px;
+  border-radius: 300px;
 }
+
+

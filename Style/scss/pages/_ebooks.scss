@@ -4,7 +4,7 @@
 @import "../componets/keyframes";
 
 .main-ebooks {
-    height: 120%;
+    min-height: 100vh;
     @media screen and (max-width: 600px) {
         margin-top: 0px;
         height: 100%;
@@ -70,12 +70,13 @@
         margin-top: 70px;
         text-align: center;
         font-family: "Lora", serif;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         color: $main-color-tree;
         text-shadow: 2px 2px 4px #000000;
         font-size: 60px;
         @media screen and (max-width:600px) {
-            margin: 0 0;
+            font-size: 36px;
+            margin: 20px 0;
             
         }
     }
